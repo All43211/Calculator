@@ -40,142 +40,6 @@
                                     <constraint firstAttribute="leading" secondItem="IJ9-1O-rxQ" secondAttribute="leading" id="e7Q-IF-ecw"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xww-b9-X0U">
-                                <rect key="frame" x="20" y="145" width="374" height="583"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wa4-17-db3">
-                                        <rect key="frame" x="14" y="8" width="80" height="66"/>
-                                        <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <state key="normal" title="AC">
-                                            <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EW6-VQ-PnU">
-                                        <rect key="frame" x="192" y="8" width="80" height="66"/>
-                                        <animations/>
-                                        <state key="normal" title="%"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9me-Xb-tVx">
-                                        <rect key="frame" x="281" y="8" width="80" height="66"/>
-                                        <animations/>
-                                        <state key="normal" title="/"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1k-3L-t9Y">
-                                        <rect key="frame" x="14" y="82" width="80" height="66"/>
-                                        <animations/>
-                                        <state key="normal" title="7"/>
-                                        <connections>
-                                            <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JEe-iA-fFe"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wO-3V-7wA">
-                                        <rect key="frame" x="102" y="82" width="80" height="66"/>
-                                        <animations/>
-                                        <state key="normal" title="8"/>
-                                        <connections>
-                                            <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qdh-fZ-Oep"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWD-tC-Mhf">
-                                        <rect key="frame" x="281" y="82" width="80" height="66"/>
-                                        <animations/>
-                                        <state key="normal" title="*"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORb-2F-zfD">
-                                        <rect key="frame" x="14" y="156" width="80" height="66"/>
-                                        <animations/>
-                                        <state key="normal" title="4"/>
-                                        <connections>
-                                            <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FvT-qY-xiE"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1B-gQ-Hb2">
-                                        <rect key="frame" x="102" y="156" width="80" height="66"/>
-                                        <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <state key="normal" title="5"/>
-                                        <connections>
-                                            <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U7J-Nr-jIM"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="It2-rs-ICc">
-                                        <rect key="frame" x="192" y="156" width="80" height="66"/>
-                                        <animations/>
-                                        <state key="normal" title="6"/>
-                                        <connections>
-                                            <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cn6-Sa-6Jk"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63d-An-Gf6">
-                                        <rect key="frame" x="281" y="156" width="80" height="66"/>
-                                        <animations/>
-                                        <state key="normal" title="-"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7s-kJ-oPN">
-                                        <rect key="frame" x="14" y="230" width="80" height="66"/>
-                                        <animations/>
-                                        <state key="normal" title="1"/>
-                                        <connections>
-                                            <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RE9-1P-dTO"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydb-nv-hCL">
-                                        <rect key="frame" x="102" y="230" width="80" height="66"/>
-                                        <animations/>
-                                        <state key="normal" title="2"/>
-                                        <connections>
-                                            <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9iv-TO-74c"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXE-X5-6FJ">
-                                        <rect key="frame" x="192" y="230" width="80" height="66"/>
-                                        <animations/>
-                                        <state key="normal" title="3"/>
-                                        <connections>
-                                            <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9f2-DT-VCO"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4y-BZ-kac">
-                                        <rect key="frame" x="281" y="230" width="80" height="66"/>
-                                        <animations/>
-                                        <state key="normal" title="+"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOB-99-bPe">
-                                        <rect key="frame" x="192" y="304" width="80" height="66"/>
-                                        <animations/>
-                                        <state key="normal" title="."/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bB-Em-Tae">
-                                        <rect key="frame" x="14" y="304" width="168" height="66"/>
-                                        <animations/>
-                                        <state key="normal" title="0"/>
-                                        <connections>
-                                            <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vsJ-48-Vq1"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WxZ-MB-nnn">
-                                        <rect key="frame" x="281" y="304" width="80" height="66"/>
-                                        <animations/>
-                                        <state key="normal" title="="/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0m-gS-geE">
-                                        <rect key="frame" x="192" y="82" width="80" height="66"/>
-                                        <animations/>
-                                        <state key="normal" title="9"/>
-                                        <connections>
-                                            <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PbG-pC-YCK"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FlK-yT-MKJ">
-                                        <rect key="frame" x="102" y="8" width="80" height="66"/>
-                                        <animations/>
-                                        <state key="normal" title="+/-"/>
-                                    </button>
-                                </subviews>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9zl-oU-4Ly">
                                 <rect key="frame" x="20" y="77" width="374" height="60"/>
                                 <animations/>
@@ -183,6 +47,161 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="xNp-6R-z00"/>
                                 </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xww-b9-X0U">
+                                <rect key="frame" x="20" y="145" width="374" height="583"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wa4-17-db3">
+                                        <rect key="frame" x="14" y="8" width="80" height="66"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EW6-VQ-PnU">
+                                        <rect key="frame" x="192" y="8" width="80" height="66"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="%"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9me-Xb-tVx">
+                                        <rect key="frame" x="281" y="8" width="80" height="66"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="/"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1k-3L-t9Y">
+                                        <rect key="frame" x="14" y="82" width="80" height="66"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="7"/>
+                                        <connections>
+                                            <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JEe-iA-fFe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wO-3V-7wA">
+                                        <rect key="frame" x="102" y="82" width="80" height="66"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="8"/>
+                                        <connections>
+                                            <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qdh-fZ-Oep"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWD-tC-Mhf">
+                                        <rect key="frame" x="281" y="82" width="80" height="66"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="*"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORb-2F-zfD">
+                                        <rect key="frame" x="14" y="156" width="80" height="66"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="4"/>
+                                        <connections>
+                                            <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FvT-qY-xiE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1B-gQ-Hb2">
+                                        <rect key="frame" x="102" y="156" width="80" height="66"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="5"/>
+                                        <connections>
+                                            <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U7J-Nr-jIM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="It2-rs-ICc">
+                                        <rect key="frame" x="192" y="156" width="80" height="66"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="6"/>
+                                        <connections>
+                                            <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cn6-Sa-6Jk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63d-An-Gf6">
+                                        <rect key="frame" x="281" y="156" width="80" height="66"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="-"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7s-kJ-oPN">
+                                        <rect key="frame" x="14" y="230" width="80" height="66"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="1"/>
+                                        <connections>
+                                            <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RE9-1P-dTO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydb-nv-hCL">
+                                        <rect key="frame" x="102" y="230" width="80" height="66"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="2"/>
+                                        <connections>
+                                            <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9iv-TO-74c"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXE-X5-6FJ">
+                                        <rect key="frame" x="192" y="230" width="80" height="66"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="3"/>
+                                        <connections>
+                                            <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9f2-DT-VCO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4y-BZ-kac">
+                                        <rect key="frame" x="281" y="230" width="80" height="66"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="+"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOB-99-bPe">
+                                        <rect key="frame" x="192" y="304" width="80" height="66"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="."/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bB-Em-Tae">
+                                        <rect key="frame" x="14" y="304" width="168" height="66"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="0"/>
+                                        <connections>
+                                            <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vsJ-48-Vq1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WxZ-MB-nnn">
+                                        <rect key="frame" x="281" y="304" width="80" height="66"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="="/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0m-gS-geE">
+                                        <rect key="frame" x="192" y="82" width="80" height="66"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="9"/>
+                                        <connections>
+                                            <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PbG-pC-YCK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FlK-yT-MKJ">
+                                        <rect key="frame" x="102" y="8" width="80" height="66"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="+/-"/>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <animations/>
