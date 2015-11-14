@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITextField *calculatorTextBox;
+@property (strong, nonatomic) IBOutlet UITextField *calculatorTextBox;
 
 //Action Buttons
 @property (weak, nonatomic) IBOutlet UIButton *acButton;
