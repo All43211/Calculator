@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,125 +14,159 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" userInteractionEnabled="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qXZ-VQ-JSL">
-                                <rect key="frame" x="20" y="28" width="374" height="128"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qXZ-VQ-JSL">
+                                <rect key="frame" x="20" y="28" width="374" height="41"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="bezel" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IJ9-1O-rxQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="41"/>
+                                        <animations/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="IJ9-1O-rxQ" secondAttribute="bottom" id="524-7O-aOD"/>
+                                    <constraint firstItem="IJ9-1O-rxQ" firstAttribute="top" secondItem="qXZ-VQ-JSL" secondAttribute="top" id="LCR-c0-R6n"/>
+                                    <constraint firstAttribute="trailing" secondItem="IJ9-1O-rxQ" secondAttribute="trailing" id="Tcu-1D-Jh1"/>
+                                    <constraint firstAttribute="leading" secondItem="IJ9-1O-rxQ" secondAttribute="leading" id="e7Q-IF-ecw"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xww-b9-X0U">
-                                <rect key="frame" x="20" y="314" width="374" height="402"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xww-b9-X0U">
+                                <rect key="frame" x="20" y="145" width="374" height="583"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1k-3L-t9Y">
-                                        <rect key="frame" x="8" y="82" width="80" height="66"/>
-                                        <animations/>
-                                        <state key="normal" title="Button"/>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wa4-17-db3">
-                                        <rect key="frame" x="8" y="8" width="80" height="66"/>
+                                        <rect key="frame" x="14" y="8" width="80" height="66"/>
                                         <animations/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="AC"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FlK-yT-MKJ">
-                                        <rect key="frame" x="96" y="8" width="80" height="66"/>
+                                        <rect key="frame" x="102" y="8" width="80" height="66"/>
                                         <animations/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="+/-"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EW6-VQ-PnU">
-                                        <rect key="frame" x="186" y="8" width="80" height="66"/>
+                                        <rect key="frame" x="192" y="8" width="80" height="66"/>
                                         <animations/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="%"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9me-Xb-tVx">
-                                        <rect key="frame" x="274" y="8" width="80" height="66"/>
+                                        <rect key="frame" x="281" y="8" width="80" height="66"/>
                                         <animations/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="/"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1k-3L-t9Y">
+                                        <rect key="frame" x="14" y="82" width="80" height="66"/>
+                                        <animations/>
+                                        <state key="normal" title="7"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wO-3V-7wA">
-                                        <rect key="frame" x="96" y="82" width="80" height="66"/>
+                                        <rect key="frame" x="102" y="82" width="80" height="66"/>
                                         <animations/>
-                                        <state key="normal" title="Button"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0m-gS-geE">
-                                        <rect key="frame" x="184" y="82" width="82" height="66"/>
-                                        <animations/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="8"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWD-tC-Mhf">
-                                        <rect key="frame" x="272" y="82" width="82" height="66"/>
+                                        <rect key="frame" x="281" y="82" width="80" height="66"/>
                                         <animations/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="*"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORb-2F-zfD">
-                                        <rect key="frame" x="8" y="156" width="80" height="66"/>
+                                        <rect key="frame" x="14" y="156" width="80" height="66"/>
                                         <animations/>
-                                        <state key="normal" title="Button"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7s-kJ-oPN">
-                                        <rect key="frame" x="8" y="230" width="80" height="66"/>
-                                        <animations/>
-                                        <state key="normal" title="Button"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydb-nv-hCL">
-                                        <rect key="frame" x="96" y="230" width="80" height="66"/>
-                                        <animations/>
-                                        <state key="normal" title="Button"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXE-X5-6FJ">
-                                        <rect key="frame" x="184" y="230" width="80" height="66"/>
-                                        <animations/>
-                                        <state key="normal" title="Button"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4y-BZ-kac">
-                                        <rect key="frame" x="272" y="230" width="80" height="66"/>
-                                        <animations/>
-                                        <state key="normal" title="Button"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOB-99-bPe">
-                                        <rect key="frame" x="184" y="304" width="80" height="66"/>
-                                        <animations/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="4"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1B-gQ-Hb2">
-                                        <rect key="frame" x="96" y="156" width="80" height="66"/>
+                                        <rect key="frame" x="102" y="156" width="80" height="66"/>
                                         <animations/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="5"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="It2-rs-ICc">
-                                        <rect key="frame" x="184" y="156" width="80" height="66"/>
+                                        <rect key="frame" x="192" y="156" width="80" height="66"/>
                                         <animations/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="6"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63d-An-Gf6">
-                                        <rect key="frame" x="272" y="156" width="80" height="66"/>
+                                        <rect key="frame" x="281" y="156" width="80" height="66"/>
                                         <animations/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="-"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7s-kJ-oPN">
+                                        <rect key="frame" x="14" y="230" width="80" height="66"/>
+                                        <animations/>
+                                        <state key="normal" title="1"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydb-nv-hCL">
+                                        <rect key="frame" x="102" y="230" width="80" height="66"/>
+                                        <animations/>
+                                        <state key="normal" title="2"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXE-X5-6FJ">
+                                        <rect key="frame" x="192" y="230" width="80" height="66"/>
+                                        <animations/>
+                                        <state key="normal" title="3"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4y-BZ-kac">
+                                        <rect key="frame" x="281" y="230" width="80" height="66"/>
+                                        <animations/>
+                                        <state key="normal" title="+"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOB-99-bPe">
+                                        <rect key="frame" x="192" y="304" width="80" height="66"/>
+                                        <animations/>
+                                        <state key="normal" title="."/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bB-Em-Tae">
-                                        <rect key="frame" x="8" y="304" width="168" height="66"/>
+                                        <rect key="frame" x="14" y="304" width="168" height="66"/>
                                         <animations/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="0"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WxZ-MB-nnn">
-                                        <rect key="frame" x="272" y="304" width="80" height="66"/>
+                                        <rect key="frame" x="281" y="304" width="80" height="66"/>
                                         <animations/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="="/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0m-gS-geE">
+                                        <rect key="frame" x="192" y="82" width="80" height="66"/>
+                                        <animations/>
+                                        <state key="normal" title="9"/>
                                     </button>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9zl-oU-4Ly">
-                                <rect key="frame" x="20" y="173" width="374" height="128"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9zl-oU-4Ly">
+                                <rect key="frame" x="20" y="77" width="374" height="60"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="xNp-6R-z00"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qXZ-VQ-JSL" secondAttribute="trailing" constant="20" symbolic="YES" id="2yW-LV-1Gh"/>
+                            <constraint firstItem="xww-b9-X0U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="8qc-Ox-V5S"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xww-b9-X0U" secondAttribute="bottom" constant="8" symbolic="YES" id="J9P-Po-GmU"/>
+                            <constraint firstItem="xww-b9-X0U" firstAttribute="top" secondItem="9zl-oU-4Ly" secondAttribute="bottom" constant="8" symbolic="YES" id="JW1-LR-Mga"/>
+                            <constraint firstAttribute="trailing" secondItem="xww-b9-X0U" secondAttribute="trailing" constant="20" symbolic="YES" id="LXs-Qx-Q8K"/>
+                            <constraint firstItem="9zl-oU-4Ly" firstAttribute="top" secondItem="qXZ-VQ-JSL" secondAttribute="bottom" constant="8" symbolic="YES" id="LeG-Du-pk0"/>
+                            <constraint firstItem="xww-b9-X0U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-6.5" id="ODa-JK-Ma7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9zl-oU-4Ly" secondAttribute="trailing" id="SWN-kn-xr7"/>
+                            <constraint firstItem="qXZ-VQ-JSL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="ZeE-p2-ycd"/>
+                            <constraint firstItem="9zl-oU-4Ly" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dAc-uU-sPw"/>
+                            <constraint firstItem="9zl-oU-4Ly" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="lDT-10-IdS"/>
+                            <constraint firstItem="qXZ-VQ-JSL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="pKo-Hh-on2"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
