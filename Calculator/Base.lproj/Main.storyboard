@@ -18,14 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qXZ-VQ-JSL">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qXZ-VQ-JSL">
                                 <rect key="frame" x="20" y="28" width="374" height="41"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="bezel" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IJ9-1O-rxQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="41"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IJ9-1O-rxQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
                                         <animations/>
                                         <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                            <accessibilityTraits key="traits" notEnabled="YES"/>
                                         </accessibility>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -40,18 +40,16 @@
                                     <constraint firstAttribute="leading" secondItem="IJ9-1O-rxQ" secondAttribute="leading" id="e7Q-IF-ecw"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xww-b9-X0U">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xww-b9-X0U">
                                 <rect key="frame" x="20" y="145" width="374" height="583"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wa4-17-db3">
                                         <rect key="frame" x="14" y="8" width="80" height="66"/>
                                         <animations/>
-                                        <state key="normal" title="AC"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FlK-yT-MKJ">
-                                        <rect key="frame" x="102" y="8" width="80" height="66"/>
-                                        <animations/>
-                                        <state key="normal" title="+/-"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EW6-VQ-PnU">
                                         <rect key="frame" x="192" y="8" width="80" height="66"/>
@@ -67,11 +65,17 @@
                                         <rect key="frame" x="14" y="82" width="80" height="66"/>
                                         <animations/>
                                         <state key="normal" title="7"/>
+                                        <connections>
+                                            <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JEe-iA-fFe"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wO-3V-7wA">
                                         <rect key="frame" x="102" y="82" width="80" height="66"/>
                                         <animations/>
                                         <state key="normal" title="8"/>
+                                        <connections>
+                                            <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qdh-fZ-Oep"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWD-tC-Mhf">
                                         <rect key="frame" x="281" y="82" width="80" height="66"/>
@@ -82,16 +86,26 @@
                                         <rect key="frame" x="14" y="156" width="80" height="66"/>
                                         <animations/>
                                         <state key="normal" title="4"/>
+                                        <connections>
+                                            <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FvT-qY-xiE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1B-gQ-Hb2">
                                         <rect key="frame" x="102" y="156" width="80" height="66"/>
                                         <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <state key="normal" title="5"/>
+                                        <connections>
+                                            <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U7J-Nr-jIM"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="It2-rs-ICc">
                                         <rect key="frame" x="192" y="156" width="80" height="66"/>
                                         <animations/>
                                         <state key="normal" title="6"/>
+                                        <connections>
+                                            <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cn6-Sa-6Jk"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63d-An-Gf6">
                                         <rect key="frame" x="281" y="156" width="80" height="66"/>
@@ -102,16 +116,25 @@
                                         <rect key="frame" x="14" y="230" width="80" height="66"/>
                                         <animations/>
                                         <state key="normal" title="1"/>
+                                        <connections>
+                                            <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RE9-1P-dTO"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydb-nv-hCL">
                                         <rect key="frame" x="102" y="230" width="80" height="66"/>
                                         <animations/>
                                         <state key="normal" title="2"/>
+                                        <connections>
+                                            <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9iv-TO-74c"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXE-X5-6FJ">
                                         <rect key="frame" x="192" y="230" width="80" height="66"/>
                                         <animations/>
                                         <state key="normal" title="3"/>
+                                        <connections>
+                                            <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9f2-DT-VCO"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4y-BZ-kac">
                                         <rect key="frame" x="281" y="230" width="80" height="66"/>
@@ -127,6 +150,9 @@
                                         <rect key="frame" x="14" y="304" width="168" height="66"/>
                                         <animations/>
                                         <state key="normal" title="0"/>
+                                        <connections>
+                                            <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vsJ-48-Vq1"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WxZ-MB-nnn">
                                         <rect key="frame" x="281" y="304" width="80" height="66"/>
@@ -137,12 +163,20 @@
                                         <rect key="frame" x="192" y="82" width="80" height="66"/>
                                         <animations/>
                                         <state key="normal" title="9"/>
+                                        <connections>
+                                            <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PbG-pC-YCK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FlK-yT-MKJ">
+                                        <rect key="frame" x="102" y="8" width="80" height="66"/>
+                                        <animations/>
+                                        <state key="normal" title="+/-"/>
                                     </button>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9zl-oU-4Ly">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9zl-oU-4Ly">
                                 <rect key="frame" x="20" y="77" width="374" height="60"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -160,7 +194,6 @@
                             <constraint firstItem="xww-b9-X0U" firstAttribute="top" secondItem="9zl-oU-4Ly" secondAttribute="bottom" constant="8" symbolic="YES" id="JW1-LR-Mga"/>
                             <constraint firstAttribute="trailing" secondItem="xww-b9-X0U" secondAttribute="trailing" constant="20" symbolic="YES" id="LXs-Qx-Q8K"/>
                             <constraint firstItem="9zl-oU-4Ly" firstAttribute="top" secondItem="qXZ-VQ-JSL" secondAttribute="bottom" constant="8" symbolic="YES" id="LeG-Du-pk0"/>
-                            <constraint firstItem="xww-b9-X0U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-6.5" id="ODa-JK-Ma7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9zl-oU-4Ly" secondAttribute="trailing" id="SWN-kn-xr7"/>
                             <constraint firstItem="qXZ-VQ-JSL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="ZeE-p2-ycd"/>
                             <constraint firstItem="9zl-oU-4Ly" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dAc-uU-sPw"/>
@@ -169,6 +202,27 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="acButton" destination="Wa4-17-db3" id="Cmv-TN-wRb"/>
+                        <outlet property="calculatorTextBox" destination="IJ9-1O-rxQ" id="PJL-9d-yZi"/>
+                        <outlet property="decimalButton" destination="KOB-99-bPe" id="CTr-7d-Adn"/>
+                        <outlet property="divideButton" destination="9me-Xb-tVx" id="yOB-2J-mud"/>
+                        <outlet property="eightButton" destination="2wO-3V-7wA" id="Ub0-Nc-J4i"/>
+                        <outlet property="equalButton" destination="WxZ-MB-nnn" id="Jxa-hU-SHX"/>
+                        <outlet property="fiveButton" destination="w1B-gQ-Hb2" id="Nqd-mi-EwV"/>
+                        <outlet property="fourButton" destination="ORb-2F-zfD" id="OR1-ho-jvc"/>
+                        <outlet property="multiplyButton" destination="iWD-tC-Mhf" id="opD-I0-bgf"/>
+                        <outlet property="nineButton" destination="b0m-gS-geE" id="fff-ML-AMh"/>
+                        <outlet property="oneButton" destination="i7s-kJ-oPN" id="TDx-zI-Qqa"/>
+                        <outlet property="percentButton" destination="EW6-VQ-PnU" id="aqm-BU-c6v"/>
+                        <outlet property="plusButton" destination="J4y-BZ-kac" id="dXd-hz-U5w"/>
+                        <outlet property="sevenButton" destination="Y1k-3L-t9Y" id="9kA-Kz-Rb9"/>
+                        <outlet property="signButton" destination="FlK-yT-MKJ" id="TKy-kx-3CZ"/>
+                        <outlet property="sixButton" destination="It2-rs-ICc" id="qM2-Kx-TFM"/>
+                        <outlet property="threeButton" destination="CXE-X5-6FJ" id="iLn-eP-wt9"/>
+                        <outlet property="twoButton" destination="Ydb-nv-hCL" id="LXi-V9-lF4"/>
+                        <outlet property="zeroButton" destination="8bB-Em-Tae" id="ulD-BY-xdB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
