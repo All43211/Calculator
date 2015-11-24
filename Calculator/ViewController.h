@@ -8,8 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+int Method;
+double SelectNumber;
+bool HasDecimal;
+int DecimalPlaces;
+double RunningTotal;
+
 @interface ViewController : UIViewController
-@property (strong, nonatomic) IBOutlet UITextField *calculatorTextBox;
+{
+    IBOutlet UILabel *OutPutLabel;
+    
+}
 
 //Action Buttons
 @property (weak, nonatomic) IBOutlet UIButton *acButton;
@@ -20,6 +29,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *plusButton;
 @property (weak, nonatomic) IBOutlet UIButton *decimalButton;
 @property (weak, nonatomic) IBOutlet UIButton *equalButton;
+@property (weak, nonatomic) IBOutlet UIButton *minusButton;
 
 //Number Buttons
 @property (weak, nonatomic) IBOutlet UIButton *oneButton;
@@ -35,5 +45,6 @@
 
 - (IBAction)addNumber:(id)sender;
 
+- (IBAction)setFunction:(id)sender;
 @end
 
