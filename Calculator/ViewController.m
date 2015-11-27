@@ -2,7 +2,7 @@
 //  ViewController.m
 //  Calculator
 //
-//  Created by Amy Steele on 11/13/15.
+//  Created by Allen Porter, Erin Hein, and Karen Ibarra on 11/13/15.
 //  Copyright © 2015 MSB SD352. All rights reserved.
 //
 
