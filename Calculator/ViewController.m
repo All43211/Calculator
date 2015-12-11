@@ -222,7 +222,34 @@
     
     
 }
--(IBAction)Equals:(id)sender{
+-(IBAction)Equals:(id)sender
+
+
+{
+    int randomimages = rand() % 5;
+    switch (randomimages) {
+        case 0:
+            textview.text =@"My cat knew this answer";
+            break;
+        case 1:
+            textview.text =@"I'm so good";
+            break;
+        case 2:
+            textview.text =@"Siri didn't know this answer";
+            break;
+        case 3:
+            textview.text =@"Must be your lucky number";
+            break;
+        case 4:
+            textview.text =@"Are you gonna Instragram this?";
+            break;
+            
+        default:
+            break;
+
+
+
+    }
     
     if (RunningTotal == 0){
         RunningTotal = SelectNumber;

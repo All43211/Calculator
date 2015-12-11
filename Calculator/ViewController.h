@@ -18,6 +18,7 @@ float RunningTotal;
 {
    
     IBOutlet UILabel *Screen;
+    IBOutlet UILabel *textview;
     
 }
 
